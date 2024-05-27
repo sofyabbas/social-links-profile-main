@@ -7,11 +7,15 @@
   box-sizing: border-box;
 }
 
+body{
+  min-width: 400px;
+}
+
 .main {
   background-color: hsl(0, 0%, 8%);
+  min-width: 400px;
   width: 100%;
   height: 100vh;
-  border: dashed 1px tomato;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,34 +66,36 @@
   font-size: 1.3em;
   font-weight: 400;
 }
-.links{
-display: flex;
-flex-direction: column;
-margin-bottom: 2.5em;
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2.5em;
 }
-.links button{
-width: 80%;
-margin: auto;
-margin-top: 10px;
-margin-bottom: 10px;
-padding-top: 10px;
-padding-bottom: 10px;
-cursor: pointer;
-background-color: hsl(0, 0%, 20%);
-color: hsl(0, 0%, 100%);
-border-radius: 10px;
-border-color: transparent;
-font-size: 1.3em;
-font-weight: 400;
+
+.links button {
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  border-color: transparent;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 
 @media screen and (min-width: 375px) {
   div {
-   .profile-card{
-    min-width: 375px;
-    margin-left: 15px;
-    margin-right: 15px;
-   }
+    .profile-card {
+      min-width: 375px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
   }
 
 }
